@@ -7,7 +7,6 @@ import Database from '../containers/Database';
 
 export default (
       <Route path="/" component={Root}>
-          <IndexRoute component={Home} />
-          <Route path="/db" component={Database} />
+          <IndexRoute component={Database} />
      </Route>
 );

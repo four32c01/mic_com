@@ -11,21 +11,7 @@ class Home extends React.Component {
 
     componentWillMount() {
         this.props.getUsers();
-        console.log("HOME WILL MOUNT");
     }
-
-    componentDidMount(){
-        console.log("HOME DID MOUNT");
-    }
-
-    componentWillUpdate(){
-        console.log("HOME WILL UPDATE");
-    }
-
-    componentWillUnmount(){
-        console.log("HOME UNMOUNT");
-    }
-
 
     render() {
         return (
@@ -38,9 +24,6 @@ class Home extends React.Component {
                     {this.props.users && this.props.users.map((user) => {
                         return <li>{user.name.title} {user.name.first} {user.name.last}</li>                
                     })}
-                    <Link to="/db">
-                        Linkic na bazy
-                    </Link>
                 </ul>
             </div>
         );
