@@ -1,10 +1,13 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
-import Home from '../components/Home';
+import Root from '../containers/Root';
+import Home from '../containers/Home';
+import Database from '../containers/Database';
 
 export default (
-      <Route path="/" component={Home}>
-        <IndexRoute component={Home} />
+      <Route path="/" component={Root}>
+          <IndexRoute component={Home} />
+          <Route path="/db" component={Database} />
      </Route>
 );
