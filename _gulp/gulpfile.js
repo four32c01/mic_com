@@ -38,7 +38,7 @@ var onError = function (error) {
 var paths = {
     scss: {
         src: '../static/scss/**/*',
-        main: '../static/scss/main.scss',
+        main: '../static/scss/style.scss',
         dest: '../static/css/',
         build: '../static/dist/'
     },

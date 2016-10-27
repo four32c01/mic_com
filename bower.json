@@ -1,0 +1,11 @@
+{
+  "name": ".mic",
+  "version": "0.1",
+  "devDependencies": {
+    "is_js": "isjs#^0.8.0",
+    "gsap": "^1.18.5"
+  },
+  "dependencies": {
+    "susy": "~2.2.6"
+  }
+}
