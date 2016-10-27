@@ -2,8 +2,8 @@
 //#######################################
 //## MIXINS #############################
 //#######################################
-@import "helpers/mixins/responsive";
-//@import "helpers/mixins/responsiveMQ";
+//@import "helpers/mixins/responsive";
+@import "helpers/mixins/responsiveMQ";
 @import "helpers/mixins/background";
 @import "helpers/mixins/box";
 @import "helpers/mixins/fonts";
@@ -16,6 +16,7 @@
 @import "helpers/variables/routes";
 @import "helpers/variables/colors";
 @import "helpers/variables/fonts";
+@import "helpers/variables/transitions";
 //#######################################
 //## FUNCTIONS ##########################
 //#######################################
@@ -35,6 +36,9 @@
 //#######################################
 //## COMPONENTS #########################
 //#######################################
+@import "components/styleguide";
+@import "components/typography";
+@import "components/icons";
 @import "components/buttons";
 //#######################################
 //## PLUGINS ############################
@@ -43,3 +47,4 @@
 //#######################################
 //## PAGES ##############################
 //#######################################
+@import "pages/database";

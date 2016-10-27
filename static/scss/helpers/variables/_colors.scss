@@ -40,3 +40,23 @@ $default-selection-bg-color: $black;
 //#######################################
 //## PROJECT COLORS #####################
 //#######################################
+
+$magenta: #FA355B;
+$magenta-overlay-30: transparentize($magenta, 0.7);
+$magenta-overlay-70: transparentize($magenta, 0.3);
+$grey: #b7b7b7;
+$grey-A: #cccccc;
+$dark-grey: #181818;
+$light-grey: #F5F5F5;
+
+//#######################################
+//## DEFAULT ############################
+//#######################################
+
+$default-body-text-color: $grey;
+$default-body-link-color: $magenta;
+
+$default-selection-text-color: $white;
+$default-selection-bg-color: $black-50;
+
+$link-color: $magenta;

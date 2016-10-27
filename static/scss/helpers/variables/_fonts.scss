@@ -1,9 +1,32 @@
 //########################################
+//## FONT IMPORTS ########################
+//########################################
+
+
+@font-face {
+    font-family: 'Stag-Bold';
+    src: url('../fonts/stag-bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/stag-bold.otf')  format('opentype'),
+    url('../fonts/stag-bold.woff') format('woff'), url('../fonts/stag-bold.ttf')  format('truetype'), url('../fonts/stag-bold.svg#.') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stag-Light';
+    src: url('../fonts/stag-light.eot?#iefix') format('embedded-opentype'),  url('../fonts/stag-light.otf')  format('opentype'),
+    url('../fonts/stag-light.woff') format('woff'), url('../fonts/stag-light.ttf')  format('truetype'), url('../fonts/stag-light.svg#.') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+//########################################
 //## FONT VARIABLES ######################
 //########################################
 
-$font-main: Helvetica, Arial, sans-serif;
-$font-main-arabic: Helvetica, Arial, sans-serif;
+$font-main: 'proxima-nova', Helvetica, Arial, sans-serif;
+$stag-bold: 'Stag-Bold', Georgia, serif;
+$stag-light: 'Stag-Light', Georgia, serif;
 
 //########################################
 //## SIZES ###############################
@@ -11,3 +34,18 @@ $font-main-arabic: Helvetica, Arial, sans-serif;
 
 $browser-context: 18; // px
 $browser-line-height: 18; // px
+
+
+//########################################
+//## HEADINGS ############################
+//########################################
+$fs-h1: (null: 45, tablet: 36, mobile: 28);
+$fs-h2: (null: 35);
+$fs-h3: (null: 20, tablet: 18, mobile: 17);
+$fs-h3-menu: (null: 25, tablet: 22, mobile: 19);
+$fs-h4: (null: 16);
+$fs-h5: (null: 16);
+$fs-h6: (null: 16);
+$fs-above-title: (null: 12);
+$fs-p: (null: 18, desktop-: 16);
+$fs-subtitle: (null: 16);

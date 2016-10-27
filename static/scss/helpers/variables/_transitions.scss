@@ -1,0 +1,12 @@
+//ANIMATIONS STUFF
+$hover: all 0.2s cubic-bezier(.55,0,.1,1);
+$slide: all 0.35s  cubic-bezier(.55,0,.1,1);
+$slide-delay: all 0.35s 0.15s  cubic-bezier(.55,0,.1,1);
+$slide-delay-A: all 0.35s 0.3s  cubic-bezier(.55,0,.1,1);
+$slide-slow: all 0.6s  cubic-bezier(.55,0,.1,1);
+$zoom: all 1s  cubic-bezier(.55,0,.1,1);
+$zoom-slow: all 2.4s  cubic-bezier(.55,0,.1,1);
+
+//TAB SPECIFIC
+
+$slide-tab: opacity, visibility 0.35s  cubic-bezier(.55,0,.1,1);

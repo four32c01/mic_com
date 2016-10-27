@@ -1,0 +1,78 @@
+//BUTTONS
+.button {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 15px 60px;
+    transition: $slide;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+
+    @include MQ(desktop-) {
+        padding: 10px 32px;
+    }
+
+    span, .icon {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .icon {
+        margin-left: 12px;
+        transition: $slide;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        right: -1px;
+        bottom: -1px;
+        border-radius: 100px;
+        border: 1px solid $magenta;
+        opacity: 0;
+        transition: $slide;
+        will-change: opacity, top, left, bottom, right;
+    }
+
+    &.button--gold {
+        color: $white;
+        background-color: $magenta;
+        border: 1px solid $magenta;
+
+        .icon {
+            color: $white-100;
+        }
+    }
+
+    &.button--white {
+        color: $black;
+        border: 1px solid $light-grey;
+
+        &:hover {
+            .icon {
+                color: $white-100;
+            }
+        }
+    }
+
+    &.button--black {
+        color: $grey;
+        background-color: $black;
+        border: 1px solid $grey;
+
+        &:before {
+            border: 1px solid $grey;
+        }
+
+        &:hover {
+            background-color: $grey;
+            color: $black;
+            border: 1px solid $grey;
+        }
+    }
+}

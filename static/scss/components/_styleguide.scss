@@ -1,0 +1,149 @@
+$grey-border: #f0f0f0;
+$grey-caption: #333333;
+
+//SECTION
+.styleguide__section {
+    padding: 60px 0;
+    border-top: 1px solid $grey-border;
+}
+
+//CONTAINER
+.styleguide__container {
+    max-width: span(16 of 24);
+    margin: 0 auto;
+}
+
+// COLORS
+.color__block {
+    display: inline-block;
+    border: 1px solid $grey-border;
+    width: 92px;
+    height: 92px;
+    margin-right: 24px;
+    padding: 8px;
+    margin-bottom: 54px;
+    position: relative;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.color {
+    display: block;
+    width: 100%;
+    padding-bottom: 100%;
+
+    &:before {
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        line-height: 18px;
+        font-size: 14px;
+        text-align: center;
+        color: lighten($grey-caption, 20%);
+    }
+
+    &:after {
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: -48px;
+        left: 0;
+        line-height: 16px;
+        font-size: 12px;
+        text-align: center;
+        color: $grey-caption;
+        font-style: normal;
+    }
+
+    &.color--black {
+        background-color: $black;
+
+        &:before {
+            content: "$black";
+        }
+
+        &:after {
+            content: "#{$black}";
+        }
+    }
+
+    &.color--grey {
+        background-color: $grey;
+
+        &:before {
+            content: "$grey";
+        }
+
+        &:after {
+            content: "#{$grey}";
+        }
+    }
+
+    &.color--grey-a {
+        background-color: $grey-A;
+
+        &:before {
+            content: "$grey-A";
+        }
+
+        &:after {
+            content: "#{$grey-A}";
+        }
+    }
+
+    &.color--dark-grey {
+        background-color: $dark-grey;
+
+        &:before {
+            content: "$dark-grey";
+        }
+
+        &:after {
+            content: "#{$dark-grey}";
+        }
+    }
+
+    &.color--light-grey {
+        background-color: $light-grey;
+
+        &:before {
+            content: "$light-grey";
+        }
+
+        &:after {
+            content: "#{$light-grey}";
+        }
+    }
+
+    &.color--magenta {
+        background-color: $magenta;
+
+        &:before {
+            content: "$magenta";
+        }
+
+        &:after {
+            content: "#{$magenta}";
+        }
+    }
+}
+
+//STYLEGUIDE HEADING
+.styleguide__heading {
+    position: relative;
+    margin-bottom: 40px;
+
+    &:after {
+        content: "";
+        height: 2px;
+        position: absolute;
+        bottom: 16px;
+        left: 0;
+        width: 45px;
+        background-color: $magenta;
+    }
+}

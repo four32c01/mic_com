@@ -33,7 +33,8 @@
                 font-size: $fs-font-size;
             }
         } @else {
-            @include breakpoint($fs-breakpoint) {
+            //@include breakpoint($fs-breakpoint) {
+            @include MQ($fs-breakpoint) {
                 @if $function == rem {
                     font-size: rem($fs-font-size);
                 } @else if $function == em {

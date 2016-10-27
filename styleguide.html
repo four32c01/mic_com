@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>.Mic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" media="all">
+    <!-- TYPEKIT -->
+    <script>
+        (function (d) {
+            var config = {
+                        kitId: 'zwm6whl',
+                        scriptTimeout: 3000,
+                        async: true
+                    },
+                    h = d.documentElement, t = setTimeout(function () {
+                        h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                    }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded")return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {
+                }
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+<body>
+<div class="main__wrapper main__wrapper--styleguide">
+    <!-- STYLEGUIDE -->
+
+    <!-- typography -->
+    <section class="section styleguide__section section--typography">
+        <div class="section__heading">
+            <div class="container styleguide__container">
+                <p class="styleguide__heading">
+                    Typography
+                </p>
+            </div>
+        </div>
+        <div class="container styleguide__container">
+
+            <p class="above__title">
+                This is above title.
+            </p>
+            <h1 class="title__h1">
+                This is h1 heading.
+            </h1>
+            <h2 class="title__h2">
+                This is h2 heading.
+            </h2>
+            <h3 class="title__h3">
+                This is h3 heading.
+            </h3>
+            <h4 class="title__h4">
+                This is h4 heading.
+            </h4>
+            <h5 class="title__h5">
+                This is h5 heading.
+            </h5>
+            <p class="subtitle">
+                This is subtitle.
+            </p>
+            <p>
+                This is body text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae error
+                molestiae perferendis quas! Accusamus ad alias beatae cupiditate dolore dolorem exercitationem fuga modi
+                natus odio, quisquam tenetur voluptas. Dolorem.
+            </p>
+        </div>
+    </section>
+    <!-- //typography -->
+
+    <!-- colors -->
+    <section class="section styleguide__section section--colors">
+
+        <div class="section__heading">
+            <div class="container styleguide__container">
+                <p class="styleguide__heading">
+                    Colors
+                </p>
+            </div>
+        </div>
+        <div class="container styleguide__container">
+            <div class="color__block">
+                <i class="color color--black"></i>
+            </div>
+
+            <div class="color__block">
+                <i class="color color--dark-grey"></i>
+            </div>
+
+            <div class="color__block">
+                <i class="color color--grey"></i>
+            </div>
+
+            <div class="color__block">
+                <i class="color color--grey-a"></i>
+            </div>
+
+            <div class="color__block">
+                <i class="color color--light-grey"></i>
+            </div>
+
+            <div class="color__block">
+                <i class="color color--magenta"></i>
+            </div>
+        </div>
+    </section>
+    <!-- //colors -->
+
+    <!-- buttons -->
+    <section class="section styleguide__section section--buttons">
+
+        <div class="section__heading">
+            <div class="container styleguide__container">
+                <p class="styleguide__heading">
+                    Buttons
+                </p>
+            </div>
+        </div>
+        <div class="container styleguide__container">
+            <a href="#" class="button button--gold">Button</a>
+            <a href="#" class="button button--white">Button white</a>
+        </div>
+    </section>
+    <!-- //buttons -->
+
+    <!-- colors -->
+    <section class="section styleguide__section section--thumbnails">
+
+        <div class="section__heading">
+            <div class="container styleguide__container">
+                <p class="styleguide__heading">
+                    Thumbnails
+                </p>
+            </div>
+        </div>
+        <div class="container styleguide__container">
+            <div class="database-item">
+                <a href="#">
+                    <figure class="database-item__thumbnail">
+                        <img src="static/images/thumbnail-3.jpg" alt="">
+                        <figcaption class="database-item__caption">
+                            <p>Deeniquia Dodds</p>
+                            <svg class="icon icon-arrow-right">
+                                <use xlink:href="static/ui/svg/svg-sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="database-item">
+                <a href="#">
+                    <figure class="database-item__thumbnail">
+                        <img src="static/images/thumbnail-1.jpg" alt="">
+                        <figcaption class="database-item__caption">
+                            <p>Kate Beckinsale</p>
+                            <svg class="icon icon-arrow-right">
+                                <use xlink:href="static/ui/svg/svg-sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="database-item is-active">
+                <a href="#">
+                    <figure class="database-item__thumbnail">
+                        <img src="static/images/thumbnail-2.jpg" alt="">
+                        <figcaption class="database-item__caption">
+                            <p>Shia Le Bouf</p>
+                            <svg class="icon icon-arrow-right">
+                                <use xlink:href="static/ui/svg/svg-sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- //colors -->
+
+    <!-- //STYLEGUIDE -->
+</div>
+<script src="static/js/vendor/svgxuse.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

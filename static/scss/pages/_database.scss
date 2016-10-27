@@ -1,0 +1,142 @@
+//SPECIFIC MIXINS
+@mixin database-item-normal {
+    opacity: 0.25;
+    filter: grayscale(1) brightness(1.22) hue-rotate(-65deg);
+
+}
+
+@mixin database-item-hover {
+    opacity: 0.75;
+    filter: grayscale(1) brightness(1);
+
+}
+
+@mixin database-item-active {
+    opacity: 0.75;
+    filter: grayscale(1) brightness(1);
+
+}
+
+.styleguide__container {
+    @include susy-clearfix;
+}
+
+//DATABASE
+.database {
+
+    @include susy-clearfix;
+
+    &-item {
+        max-width: 185px; // remove
+        float: left; // remove
+
+        a {
+            display: block;
+        }
+
+        &__thumbnail {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+
+            img {
+                @include database-item-normal;
+                display: block;
+                position: relative;
+                width: 100%;
+                height: auto;
+                z-index: 1;
+                vertical-align: top;
+                transition: $slide;
+                will-change: filter, opacity;
+            }
+        }
+
+        &__caption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 22px 44px 44px 22px;
+            opacity: 0;
+            transition: $slide;
+            z-index: 2;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $magenta-overlay-70;
+                display: block;
+                transition: $slide;
+                z-index: -1;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 2px solid $white;
+                opacity: 0;
+                display: block;
+                transition: $slide;
+                z-index: 1;
+            }
+
+            p {
+                color: $white;
+                opacity: 0;
+                transform: translateX(-8px);
+                transition: $slide-delay;
+                will-change: transform, opacity;
+            }
+
+            .icon {
+                color: $white;
+                position: absolute;
+                bottom: 18px;
+                left: 22px;
+                opacity: 0;
+                transform: translateX(-8px);
+                transition: $slide-delay-A;
+                will-change: transform, opacity;
+            }
+        }
+
+        &:hover {
+            .database-item__caption {
+                opacity: 1;
+
+                &:before {
+                    opacity: 1;
+                }
+
+                &:after {
+                    top: 12px;
+                    left: 12px;
+                    right: 12px;
+                    bottom: 12px;
+                    opacity: 1;
+                }
+            }
+
+            img {
+                @include database-item-hover;
+            }
+
+            .icon, p {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+    }
+}
