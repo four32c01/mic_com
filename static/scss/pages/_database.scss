@@ -12,8 +12,8 @@
 }
 
 @mixin database-item-active {
-    opacity: 0.75;
-    filter: grayscale(1) brightness(1);
+    opacity: 1;
+    filter: none;
 
 }
 
@@ -32,6 +32,23 @@
 
         a {
             display: block;
+        }
+
+        //active
+        &.is-active {
+            .database-item__thumbnail {
+                img {
+                    @include database-item-active;
+                }
+            }
+
+            &:hover {
+                .database-item__thumbnail {
+                    img {
+                        @include database-item-hover;
+                    }
+                }
+            }
         }
 
         &__thumbnail {
